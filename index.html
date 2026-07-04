@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>💙 Love Challenge Ultimate Edition</title>
+
+<link href="https://fonts.cdnfonts.com/css/aptos" rel="stylesheet">
+
+<link rel="stylesheet" href="Style.css">
+<link rel="stylesheet" href="script.js">
+
+</head>
+
+<body>
+
+<!-- Animated Background -->
+
+<div id="background">
+
+<div id="stars"></div>
+
+<div id="shootingStars"></div>
+
+<div id="particles"></div>
+
+<div id="floatingHearts"></div>
+
+<div id="cursorGlow"></div>
+
+</div>
+
+<!-- Background Music -->
+<!-- LOGIN SCREEN -->
+
+<section id="loginScreen">
+
+<div class="loginCard">
+
+<div class="logoHeart">
+💙
+</div>
+
+<h1 class="title">
+LOVE VAULT
+</h1>
+
+<p class="subtitle">
+Only one heart knows the password...
+</p>
+
+<div class="inputGroup">
+
+<input
+type="password"
+id="password"
+placeholder="Enter Secret Password">
+
+<span id="togglePassword">
+👁
+</span>
+
+</div>
+
+<p id="loginError"></p>
+
+<button
+class="primaryBtn"
+onclick="login()">
+
+Unlock My Heart 💙
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ====================== -->
+<!-- MAIN APPLICATION -->
+<!-- ====================== -->
+
+<section id="app" style="display:none;">
+
+<!-- TOP BAR -->
+
+<header class="topBar">
+
+<div class="progressText">
+
+Question
+
+<span id="qno">
+
+1
+
+</span>
+
+/
+
+16
+
+</div>
+
+<div class="progress">
+
+<div
+id="progressFill">
+
+</div>
+
+</div>
+
+</header>
+
+<!-- MAIN CARD -->
+
+<div class="mainContainer">
+
+<div
+class="questionCard"
+id="questionCard">
+
+<div class="questionNumber">
+
+Question
+<span id="questionIndex">
+1
+</span>
+
+</div>
+
+<h2
+id="questionText"
+class="typingText">
+
+Loading...
+
+</h2>
+
+<input
+
+type="text"
+
+id="answer"
+
+class="answerBox"
+
+placeholder="Write your answer here ❤️">
+
+<p id="answerError"></p>
+
+<button
+
+class="nextButton"
+
+onclick="nextQuestion()">
+
+Next →
+
+</button>
+        </div>
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- FINAL CINEMATIC SCREEN -->
+<!-- ========================= -->
+
+<section id="finalScreen" style="display:none;">
+
+<div class="cinemaOverlay"></div>
+
+<div class="finalContainer">
+
+<div class="finalGlow"></div>
+
+<h1 class="finalTitle">
+💙 LOVE CHALLENGE COMPLETED 💙
+</h1>
+
+<h2 class="finalSubTitle">
+You answered every question from your heart...
+</h2>
+
+<p class="finalMessage">
+
+Maybe these were only questions...
+
+But every answer became another reason
+to love you even more.
+
+❤️ ♾️ ❤️
+
+</p>
+
+<div class="ringBox">
+
+<div class="ring ring1"></div>
+<div class="ring ring2"></div>
+
+<div class="centerHeart">
+❤️
+</div>
+
+</div>
+
+<div class="buttonGroup">
+
+<button
+class="primaryBtn"
+onclick="showPromise()">
+
+Open Forever Promise 💌
+
+</button>
+
+<button
+class="secondaryBtn"
+onclick="restartChallenge()">
+
+Restart Challenge 🔄
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- FOREVER PROMISE POPUP -->
+<!-- ========================= -->
+
+<div
+id="promisePopup"
+class="popup"
+style="display:none;">
+
+<div class="popupCard">
+
+<h1>
+
+💍 OUR FOREVER PROMISE 💍
+
+</h1>
+
+<p>
+
+No matter what happens...
+
+No matter how difficult life becomes...
+
+I choose you...
+
+Again...
+
+Again...
+
+And Again...
+
+Forever.
+
+❤️
+
+</p>
+
+<button
+class="primaryBtn"
+onclick="closePromise()">
+
+Close 💙
+
+</button>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- EFFECT CONTAINERS -->
+<!-- ========================= -->
+
+<div id="heartContainer"></div>
+
+<div id="sparkContainer"></div>
+
+<div id="confettiContainer"></div>
+
+<div id="fireworksContainer"></div>
+
+<div id="meteorContainer"></div>
+
+<div id="snowContainer"></div>
+
+<div id="floatingQuotes"></div>
+
+<div id="loveParticles"></div>
+
+<!-- ========================= -->
+<!-- LOADING SCREEN -->
+<!-- ========================= -->
+
+<div id="loadingScreen">
+
+<div class="loaderCircle"></div>
+
+<h2>
+
+Preparing Your Love Story...
+
+</h2>
+
+</div>
+
+<!-- ========================= -->
+<!-- FOOTER -->
+<!-- ========================= -->
+
+<footer>
+
+<h4>Dedicated for Ansha Urooj💖
+</h4>
+</footer>
+
+<!-- ========================= -->
+<!-- JAVASCRIPT -->
+<!-- ========================= -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
